@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Position</title>
+  <style type="text/css">
+  div{
+    box-sizing:border-box;
+    border:1px solid red;
+    margin:0px auto;
+    max-width:400px;
+  }
+
+  .static{
+    position:static;
+  }
+  .relative{
+    position: relative;
+    left:200px;
+    top:200px;
+    max-width:200px;
+  }
+
+  .fixed{
+    position: fixed;
+    bottom: 200px;
+    right: 200px;
+  }
+  .absolute{
+    position:absolute;
+    top: 20px;
+    left: 20px;
+  }
+  .relative-container{
+    position: relative;
+  }
+
+  </style>
+</head>
+<body>
+
+  <div class="static">static</div>
+  <div class="relative">relative</div>
+  <div class="fixed">fixed</div>
+
+  <div class="relative-container">
+  container
+    <div class="absolute">absolute</div>
+  </div>
+
+</body>
+</html>
