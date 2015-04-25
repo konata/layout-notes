@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Margin-Auto</title>
+
+  <style type="text/css">
+  .code {
+    border:1px solid #cfcfcf;
+  }
+
+  #main{
+    width:400px;
+    margin:0 auto;
+  }
+
+
+  </style>
+</head>
+<body>
+
+
+  <div id="main" class="code">
+     Setting the width of a block-level element will prevent it from stretching out to the edges of its container to the left and right. Then, you can set the left and right margins to auto to horizontally center that element within its container. The element will take up the width you specify, then the remaining space will be split evenly between the two margins.
+     The only problem occurs when the browser window is narrower than the width of your element. The browser resolves this by creating a horizontal scrollbar on the page. Let's improve the situation...
+  </div>
+
+  <div id="max-width">
+    Using max-width instead of width in this situation will improve the browser's handling of small windows. This is important when making a site usable on mobile. Resize this page to check it out!
+    By the way, max-width is supported by all major browsers including IE7+ so you shouldn't be afraid of using it.
+  </div>
+
+
+</body>
+</html>
+
+
+
