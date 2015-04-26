@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Position Example
+  </title>
+  <style type="text/css">
+    *{
+      border:1px solid #cde;
+      box-sizing:border-box;
+    }
+    .container{
+      position:relative;
+      border:1px solid #abc;
+    }
+
+    footer{
+      height: 120px;
+      position: fixed;
+      bottom:0px;
+      left:0px;
+    }
+
+    nav{
+      position:absolute;
+      left:0px;
+      top:0px;
+      width: 200px;
+    }
+
+    section{
+      margin-left: 200px;
+    }
+
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <li>Home</li>
+      <li>Hours</li>
+      <li>Contact</li>
+      <li>Direct</li>
+      <li>Draft</li>
+    </nav>
+
+    <section>
+      section content
+    </section>
+    <section>
+      Section Content 2
+    </section>
+    <section>
+      Section Content 3
+    </section>
+
+    <footer>footer Content</footer>
+  </div>
+</body>
+</html>
